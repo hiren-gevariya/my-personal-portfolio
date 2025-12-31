@@ -68,10 +68,10 @@ export const portfolioData: PortfolioData = {
     name: "Hirenkumar Gevariya",
     title: "Software Developer / Full Stack Engineer",
     email: "hiren6165@gmail.com",
-    phone: "+91 (973) 877-0570",
+    phone: "+91 (973) 877-0470",
     location: "Ahmedabad, India",
     profileImage: "/images/profile.jpg", // Add your profile image to public/images/profile.jpg
-    linkedin: "https://linkedin.com/in/hirenkumar-gevariya",
+    linkedin: "https://in.linkedin.com/in/hirenkumar-gevariya-5680a88a",
     github: "https://github.com/hiren-gevariya",
     website: "https://hiren-gevariya.vercel.app",
   },
