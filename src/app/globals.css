@@ -127,19 +127,19 @@ body {
 }
 
 .hover-glow:hover {
-  box-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
 }
 
-/* Gradient Text - Cool Colors */
+/* Gradient Text - Modern Colors */
 .gradient-text {
-  background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-text-blue {
-  background: linear-gradient(135deg, #06b6d4 0%, #0891b2 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #6366f1 0%, #3b82f6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

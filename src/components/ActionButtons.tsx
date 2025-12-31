@@ -107,7 +107,7 @@ import html2canvas from 'html2canvas';
       <div className="fixed bottom-8 right-8 z-50 flex flex-col gap-4 no-print">
         <button
           onClick={handlePrint}
-          className="bg-gradient-to-br from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-blue-500/50 flex items-center justify-center group"
+          className="bg-gradient-to-br from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-indigo-500/50 flex items-center justify-center group"
           title="Print"
         >
           <FaPrint size={20} className="group-hover:rotate-12 transition-transform" />
@@ -116,7 +116,7 @@ import html2canvas from 'html2canvas';
         <button
           onClick={handleDownloadPDF}
           disabled={isGeneratingPDF}
-          className="bg-gradient-to-br from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 disabled:from-green-400 disabled:to-green-500 disabled:cursor-not-allowed text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-green-500/50 flex items-center justify-center group"
+          className="bg-gradient-to-br from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 disabled:from-emerald-400 disabled:to-emerald-500 disabled:cursor-not-allowed text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-emerald-500/50 flex items-center justify-center group"
           title="Download PDF"
         >
           {isGeneratingPDF ? (
@@ -129,7 +129,7 @@ import html2canvas from 'html2canvas';
         <div className="relative">
           <button
             onClick={handleShare}
-            className="bg-gradient-to-br from-cyan-500 to-teal-600 hover:from-cyan-600 hover:to-teal-700 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-cyan-500/50 flex items-center justify-center group"
+            className="bg-gradient-to-br from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-purple-500/50 flex items-center justify-center group"
             title="Share"
           >
             <FaShare size={20} className="group-hover:rotate-12 transition-transform" />
@@ -137,11 +137,11 @@ import html2canvas from 'html2canvas';
           
           {showShareMenu && (
             <div className="absolute bottom-full right-0 mb-2 glass dark:glass-dark rounded-2xl shadow-2xl p-4 min-w-[220px] border border-white/20 animate-fade-in-up">
-              <div className="flex justify-between items-center mb-3 pb-3 border-b border-gray-200 dark:border-gray-700">
-                <h3 className="font-bold text-gray-900 dark:text-white text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600">Share Portfolio</h3>
+              <div className="flex justify-between items-center mb-3 pb-3 border-b border-slate-200 dark:border-slate-700">
+                <h3 className="font-bold text-slate-900 dark:text-white text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Share Portfolio</h3>
                 <button
                   onClick={() => setShowShareMenu(false)}
-                  className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                  className="text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 p-1 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
                 >
                   <FaTimes />
                 </button>
@@ -149,31 +149,31 @@ import html2canvas from 'html2canvas';
               <div className="space-y-2">
                 <button
                   onClick={copyLink}
-                  className="w-full text-left px-4 py-2.5 rounded-lg hover:bg-white/50 dark:hover:bg-gray-700/50 text-gray-700 dark:text-gray-300 transition-all duration-200 hover:translate-x-1"
+                  className="w-full text-left px-4 py-2.5 rounded-lg hover:bg-white/50 dark:hover:bg-slate-700/50 text-slate-700 dark:text-slate-200 transition-all duration-200 hover:translate-x-1"
                 >
                   Copy Link
                 </button>
                 <button
                   onClick={() => shareOnSocial('linkedin')}
-                  className="w-full text-left px-4 py-2.5 rounded-lg hover:bg-white/50 dark:hover:bg-gray-700/50 text-gray-700 dark:text-gray-300 transition-all duration-200 hover:translate-x-1"
+                  className="w-full text-left px-4 py-2.5 rounded-lg hover:bg-white/50 dark:hover:bg-slate-700/50 text-slate-700 dark:text-slate-200 transition-all duration-200 hover:translate-x-1"
                 >
                   Share on LinkedIn
                 </button>
                 <button
                   onClick={() => shareOnSocial('twitter')}
-                  className="w-full text-left px-4 py-2.5 rounded-lg hover:bg-white/50 dark:hover:bg-gray-700/50 text-gray-700 dark:text-gray-300 transition-all duration-200 hover:translate-x-1"
+                  className="w-full text-left px-4 py-2.5 rounded-lg hover:bg-white/50 dark:hover:bg-slate-700/50 text-slate-700 dark:text-slate-200 transition-all duration-200 hover:translate-x-1"
                 >
                   Share on Twitter
                 </button>
                 <button
                   onClick={() => shareOnSocial('facebook')}
-                  className="w-full text-left px-4 py-2.5 rounded-lg hover:bg-white/50 dark:hover:bg-gray-700/50 text-gray-700 dark:text-gray-300 transition-all duration-200 hover:translate-x-1"
+                  className="w-full text-left px-4 py-2.5 rounded-lg hover:bg-white/50 dark:hover:bg-slate-700/50 text-slate-700 dark:text-slate-200 transition-all duration-200 hover:translate-x-1"
                 >
                   Share on Facebook
                 </button>
                 <button
                   onClick={() => shareOnSocial('whatsapp')}
-                  className="w-full text-left px-4 py-2.5 rounded-lg hover:bg-white/50 dark:hover:bg-gray-700/50 text-gray-700 dark:text-gray-300 transition-all duration-200 hover:translate-x-1"
+                  className="w-full text-left px-4 py-2.5 rounded-lg hover:bg-white/50 dark:hover:bg-slate-700/50 text-slate-700 dark:text-slate-200 transition-all duration-200 hover:translate-x-1"
                 >
                   Share on WhatsApp
                 </button>
