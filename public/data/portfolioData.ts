@@ -196,6 +196,14 @@ export const portfolioData: PortfolioData = {
       //github: "https://github.com/prosera/prosera-agentic-ai",
     },
     {
+      name: "Kesari Select",
+      description:
+        "Travel platform with responsive UI and dynamic features for hotel booking and travel management.",
+      technologies: ["React", "JavaScript", "SQL", "Material UI", "Laravel"],
+      link: "https://www.kesariselect.com/",
+      //github: "https://github.com/username/hrm-management-system",
+    },
+    {
       name: "E-Commerce Platform",
       description:
         "E-Commerce Platform is a platform that allows you to create and manage your own e-commerce store.",
@@ -203,14 +211,13 @@ export const portfolioData: PortfolioData = {
         "React.js",
         "JavaScript",
         "SQL",
-        "ExpressJS",
         "Elasticsearch",
         "Redux ToolKit",
         "HTML5",
         "CSS3",
       ],
       link: "https://example.com",
-      github: "https://github.com/username/ecommerce",
+      //github: "https://github.com/username/ecommerce",
     },
     {
       name: "HRM Management System",
@@ -223,11 +230,69 @@ export const portfolioData: PortfolioData = {
         "MongoDB",
         "ExpressJS",
         "Material UI",
+      ],
+      //link: "https://example.com",
+      //github: "https://github.com/username/hrm-management-system",
+    },
+    {
+      name: "Optimize",
+      description:
+        "Hospital and surgery management system with responsive UI and dynamic features like to manage patients, doctors, appointments, and more.",
+      technologies: [
+        "React",
+        "JavaScript",
+        "MySQL",
+        "IndexDB",
+        "NodeJs",
+        "ExpressJS",
+        "Redux",
         "HTML5",
         "CSS3",
       ],
-      link: "https://example.com",
-      github: "https://github.com/username/hrm-management-system",
+      //link: "https://example.com",
+      //github: "https://github.com/username/hrm-management-system",
+    },
+    {
+      name: "Plates",
+      description:
+        "Merchant and grocery management system with responsive UI and dynamic features like to manage merchants, products, orders, and more.",
+      technologies: [
+        "React",
+        "JavaScript",
+        "MySQL",
+        "ExpressJS",
+        "NodeJs",
+        "HTML5",
+        "CSS3",
+      ],
+      //link: "https://example.com",
+      //github: "https://github.com/username/hrm-management-system",
+    },
+    {
+      name: "Namable",
+      description:
+        "Domain buying and selling platform with responsive UI and dynamic features like to buy and sell domains.",
+      technologies: ["React", "JavaScript", "BootStrap 4", "HTML5", "CSS"],
+      //link: "https://example.com",
+      //github: "https://github.com/username/hrm-management-system",
+    },
+    {
+      name: "CideKick",
+      description:
+        "Admin panel for manpower and event management with responsive UI and dynamic features like to manage manpower, events, bookings, and more.",
+      technologies: [
+        "React",
+        "JavaScript",
+        "BootStrap 4",
+        "HTML5",
+        "CSS",
+        "Redux",
+        "NodeJs",
+        "ExpressJS",
+        "MySql",
+      ],
+      //link: "https://example.com",
+      //github: "https://github.com/username/hrm-management-system",
     },
   ],
   certifications: [
