@@ -45,11 +45,31 @@ Edit the portfolio data in `data/portfolioData.ts`:
 
 ## Deployment
 
-### Vercel (Recommended)
+### Quick Deploy to Vercel (Recommended)
 
-1. Push your code to GitHub
-2. Import your repository on [Vercel](https://vercel.com)
-3. Deploy with default settings
+1. **Push your code to GitHub** (already done ✅)
+2. **Import repository on Vercel**
+   - Go to [vercel.com](https://vercel.com)
+   - Sign in with GitHub
+   - Click "New Project"
+   - Import `hiren-gevariya/my-personal-portfolio`
+   - Click "Deploy"
+3. **Auto-deployment enabled** - Every push to `main` automatically deploys!
+
+### CI/CD Pipeline
+
+This project includes automated CI/CD using GitHub Actions:
+
+- ✅ **CI Pipeline** - Runs on every push/PR:
+  - Code linting
+  - Build validation
+  - Quality checks
+
+- ✅ **Auto Deployment** - Vercel automatically deploys on push to `main`
+
+View workflow status in the [Actions tab](https://github.com/hiren-gevariya/my-personal-portfolio/actions)
+
+For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md)
 
 ### Other Platforms
 

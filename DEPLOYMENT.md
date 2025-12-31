@@ -4,22 +4,63 @@ This guide will help you deploy your portfolio to various platforms.
 
 ## Quick Deploy to Vercel (Recommended)
 
-1. **Push to GitHub**
+### Option 1: Automatic Deployment via Vercel GitHub Integration (Easiest)
+
+1. **Push to GitHub** (if not already done)
    ```bash
-   git init
    git add .
    git commit -m "Initial commit"
-   git remote add origin <your-github-repo-url>
-   git push -u origin main
+   git push origin main
    ```
 
 2. **Deploy on Vercel**
    - Go to [vercel.com](https://vercel.com)
    - Sign in with GitHub
    - Click "New Project"
-   - Import your repository
+   - Import your repository: `hiren-gevariya/my-personal-portfolio`
    - Click "Deploy" (no configuration needed)
+   - Vercel will automatically detect Next.js and deploy
+   - **Auto-deployment is enabled by default** - every push to `main` will trigger a new deployment
    - Your portfolio will be live in minutes!
+
+### Option 2: CI/CD Pipeline with GitHub Actions
+
+The repository includes GitHub Actions workflows for automated CI/CD:
+
+1. **CI/CD Pipeline** (`.github/workflows/ci-cd.yml`)
+   - Runs on every push and pull request
+   - Lints code
+   - Builds the project
+   - Ensures code quality before deployment
+
+2. **Vercel Deployment** (`.github/workflows/deploy-vercel.yml`)
+   - Automatically deploys to Vercel on push to `main`
+   - Requires Vercel token setup (see below)
+
+#### Setting up Vercel Token for GitHub Actions (Optional)
+
+If you want to use the GitHub Actions workflow for deployment:
+
+1. **Get Vercel Token**
+   - Go to [Vercel Account Settings](https://vercel.com/account/tokens)
+   - Click "Create Token"
+   - Give it a name (e.g., "GitHub Actions")
+   - Copy the token
+
+2. **Add Token to GitHub Secrets**
+   - Go to your GitHub repository
+   - Navigate to: Settings → Secrets and variables → Actions
+   - Click "New repository secret"
+   - Name: `VERCEL_TOKEN`
+   - Value: Paste your Vercel token
+   - Click "Add secret"
+
+3. **Get Vercel Project ID and Org ID** (if needed)
+   - After first deployment on Vercel, go to Project Settings → General
+   - Copy Project ID and Team ID
+   - Add as secrets: `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID`
+
+**Note:** Option 1 (Vercel GitHub Integration) is recommended as it's simpler and doesn't require token management.
 
 ## Deploy to Netlify
 
@@ -92,6 +133,38 @@ NEXT_PUBLIC_API_KEY=your_api_key
 - **PDF download doesn't work**: Ensure `html2canvas` and `jspdf` are installed
 - **Styling issues**: Verify Tailwind CSS is properly configured
 - **404 errors**: Check that all routes are properly configured
+
+## CI/CD Pipeline
+
+This project includes automated CI/CD pipelines using GitHub Actions:
+
+### Workflows
+
+1. **CI Pipeline** (`.github/workflows/ci-cd.yml`)
+   - ✅ Runs on every push and pull request
+   - ✅ Installs dependencies
+   - ✅ Runs linter
+   - ✅ Builds the project
+   - ✅ Validates build artifacts
+
+2. **Deploy Pipeline** (`.github/workflows/deploy-vercel.yml`)
+   - ✅ Runs on push to `main` branch
+   - ✅ Runs linting and build
+   - ✅ Deploys to Vercel production
+
+### Workflow Status
+
+You can check the status of your workflows:
+- Go to your GitHub repository
+- Click on the "Actions" tab
+- View workflow runs and their status
+
+### Manual Workflow Trigger
+
+You can manually trigger the deployment workflow:
+- Go to Actions tab in GitHub
+- Select "Deploy to Vercel" workflow
+- Click "Run workflow"
 
 ## Performance Tips
 
