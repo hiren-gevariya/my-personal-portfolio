@@ -73,7 +73,7 @@ export const portfolioData: PortfolioData = {
     profileImage: "/images/profile.jpg", // Add your profile image to public/images/profile.jpg
     linkedin: "https://in.linkedin.com/in/hirenkumar-gevariya-5680a88a",
     github: "https://github.com/hiren-gevariya",
-    website: "https://hiren-gevariya.vercel.app",
+    website: "https://hirenkumar-gevariya.vercel.app/",
   },
   about: {
     summary:
