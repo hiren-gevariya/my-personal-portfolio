@@ -70,7 +70,7 @@ export const portfolioData: PortfolioData = {
     email: "hiren6165@gmail.com",
     phone: "+91 (973) 877-0470",
     location: "Ahmedabad, India",
-    profileImage: "/images/profile.jpg", // Add your profile image to public/images/profile.jpg
+    profileImage: "/images/profile.png",
     linkedin: "https://in.linkedin.com/in/hirenkumar-gevariya-5680a88a",
     github: "https://github.com/hiren-gevariya",
     website: "https://hirenkumar-gevariya.vercel.app/",
