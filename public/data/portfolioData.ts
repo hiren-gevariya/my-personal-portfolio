@@ -216,6 +216,14 @@ export const portfolioData: PortfolioData = {
       //github: "https://github.com/username/hrm-management-system",
     },
     {
+      name: "Kesari Inbound",
+      description:
+        "Discover the magic of India - Explore vibrant cultures, breathtaking landscape, and unique experience tailored just for you.",
+      technologies: ["React", "JavaScript", "SQL", "Material UI", "Laravel"],
+      link: "https://inbound.kesariselect.com/",
+      //github: "https://github.com/username/hrm-management-system",
+    },
+    {
       name: "E-Commerce Platform",
       description:
         "E-Commerce Platform is a platform that allows you to create and manage your own e-commerce store.",
