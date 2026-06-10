@@ -163,7 +163,19 @@ export const portfolioData: PortfolioData = {
     },
     {
       category: "Frontend",
-      items: ["React", "Next.js", "HTML5", "CSS3", "Tailwind CSS"],
+      items: [
+        "React",
+        "Next.js",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Material UI",
+        "Bootstrap",
+        "Redux",
+        "Redux ToolKit",
+        "Shad/cn",
+        "Framer Motion",
+      ],
     },
     {
       category: "Backend",
@@ -171,11 +183,11 @@ export const portfolioData: PortfolioData = {
     },
     {
       category: "Databases",
-      items: ["MongoDB", "MySQL"],
+      items: ["MongoDB", "MySQL", "Postgres"],
     },
     {
       category: "Tools & Technologies",
-      items: ["Git", "AWS", "CI/CD", "Jest", "Webpack"],
+      items: ["Github", "Gitlab", "AWS", "CI/CD", "Jest", "Webpack", "JIRA"],
     },
   ],
   projects: [
