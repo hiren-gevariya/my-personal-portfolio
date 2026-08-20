@@ -14,22 +14,30 @@ const Projects = ({ data }: ProjectsProps) => {
           Projects
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch auto-rows-fr">
         {data.map((project, index) => (
           <div
             key={index}
-            className="group bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover-lift border border-slate-200 dark:border-slate-700 hover:border-indigo-400 dark:hover:border-indigo-500 flex flex-col h-full"
+            className="group bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover-lift border border-slate-200 dark:border-slate-700 hover:border-indigo-400 dark:hover:border-indigo-500 flex flex-col h-full min-h-full"
             style={{ animationDelay: `${index * 0.1}s` }}
           >
-            <div className="mb-4 flex-grow">
-              <h3 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+            <div className="mb-4 min-h-[220px]">
+              <h3 className="min-h-[40px] text-xl md:text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
                 {project.name}
               </h3>
               <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
                 {project.description}
               </p>
+              {project.domain ? (
+                <p className="text-sm text-slate-600 dark:text-slate-300 mb-2">
+                  <span className="font-semibold text-slate-900 dark:text-white">
+                    Domain:
+                  </span>{" "}
+                  {project.domain}
+                </p>
+              ) : null}
             </div>
-            <div className="flex flex-wrap gap-2 mb-6">
+            <div className="flex flex-wrap content-start gap-2 mb-6 min-h-[72px]">
               {project.technologies.map((tech, idx) => (
                 <span
                   key={idx}
@@ -38,6 +46,28 @@ const Projects = ({ data }: ProjectsProps) => {
                   {tech}
                 </span>
               ))}
+            </div>
+            {project.keyResponsibilities?.length ? (
+              <div className="mb-6 min-h-[220px]">
+                <h4 className="text-sm font-bold text-slate-900 dark:text-white mb-2">
+                  Key Responsibilities
+                </h4>
+                <ul className="list-disc pl-5 space-y-1 text-sm text-slate-600 dark:text-slate-300">
+                  {project.keyResponsibilities.map((responsibility, idx) => (
+                    <li key={idx}>{responsibility}</li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+            <div className="min-h-[24px] mb-6">
+              {project.duration ? (
+                <p className="text-sm text-slate-600 dark:text-slate-300">
+                  <span className="font-semibold text-slate-900 dark:text-white">
+                    Duration:
+                  </span>{" "}
+                  {project.duration}
+                </p>
+              ) : null}
             </div>
             <div className="grid grid-cols-2 gap-4 pt-4 border-t border-slate-200 dark:border-slate-700 mt-auto">
               {project.link ? (

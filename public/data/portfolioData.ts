@@ -39,8 +39,11 @@ export interface Skill {
 
 export interface Project {
   name: string;
+  domain?: string;
+  duration?: string;
   description: string;
   technologies: string[];
+  keyResponsibilities?: string[];
   link?: string;
   github?: string;
 }
@@ -192,7 +195,31 @@ export const portfolioData: PortfolioData = {
   ],
   projects: [
     {
+      name: "Form Mapping Tool",
+      domain: "Insurance Claims Form Mapping Tool",
+      duration: "4 months",
+      description:
+        "Developed an insurance claims form mapping application to streamline the mapping and management of claim form fields and related data workflows.",
+      technologies: [
+        "ReactJS",
+        "TypeScript",
+        "GitHub Spec Kit",
+        "Playwright (Integration Testing)",
+      ],
+      keyResponsibilities: [
+        "Designed and developed the application from scratch, contributing across the frontend.",
+        "Built reusable and responsive UI components using the Harmony Story library.",
+        "Integrated REST APIs for application workflows and data management.",
+        "Followed spec-driven development practices using GitHub Spec Kit to structure requirements, planning, and implementation.",
+        "Developed logical, optimized, maintainable, and scalable code following industry standards and best practices.",
+        "Implemented Playwright-based E2E automation to improve quality and regression coverage.",
+        "Worked in an Agile/Scrum environment, participating in sprints, reviews, and collaborative development.",
+        "Ensured timely delivery of high-quality features through continuous testing and code reviews.",
+      ],
+    },
+    {
       name: "Prosera Agentic AI",
+      domain: "Agentic AI Platform",
       description:
         "Prosera Agentic AI is a platform that allows you to create and manage your own AI agents.",
       technologies: [
@@ -204,27 +231,49 @@ export const portfolioData: PortfolioData = {
         "Jest",
         "Webpack",
       ],
+      keyResponsibilities: [
+        "Developed features for creating and managing AI agents.",
+        "Built responsive user interfaces using Next.js, React, and TypeScript.",
+        "Integrated REST APIs for agent workflows and data management.",
+        "Implemented application logic using Node.js, ExpressJS, and SQL.",
+        "Wrote automated tests with Jest and maintained a reliable build process with Webpack.",
+      ],
       link: "https://cfg.prosera.io/",
       //github: "https://github.com/prosera/prosera-agentic-ai",
     },
     {
       name: "Kesari Select",
+      domain: "Travel and Hotel Booking Platform",
       description:
         "Travel platform with responsive UI and dynamic features for hotel booking and travel management.",
       technologies: ["React", "JavaScript", "SQL", "Material UI", "Laravel"],
+      keyResponsibilities: [
+        "Developed responsive travel and hotel booking interfaces using React and Material UI.",
+        "Implemented dynamic features for hotel search, booking, and travel management workflows.",
+        "Integrated backend services and SQL data flows through Laravel APIs.",
+        "Improved usability and consistency across customer-facing booking experiences.",
+      ],
       link: "https://www.kesariselect.com/",
       //github: "https://github.com/username/hrm-management-system",
     },
     {
       name: "Kesari Inbound",
+      domain: "Inbound Travel Platform",
       description:
         "Discover the magic of India - Explore vibrant cultures, breathtaking landscape, and unique experience tailored just for you.",
       technologies: ["React", "JavaScript", "SQL", "Material UI", "Laravel"],
+      keyResponsibilities: [
+        "Developed responsive interfaces for exploring destinations, cultures, and travel experiences in India.",
+        "Built reusable React components with Material UI for consistent page layouts.",
+        "Integrated SQL-backed Laravel services for dynamic travel content and workflows.",
+        "Collaborated on responsive and accessible user experiences across screen sizes.",
+      ],
       link: "https://inbound.kesariselect.com/",
       //github: "https://github.com/username/hrm-management-system",
     },
     {
       name: "E-Commerce Platform",
+      domain: "E-Commerce Platform",
       description:
         "E-Commerce Platform is a platform that allows you to create and manage your own e-commerce store.",
       technologies: [
@@ -236,11 +285,18 @@ export const portfolioData: PortfolioData = {
         "HTML5",
         "CSS3",
       ],
+      keyResponsibilities: [
+        "Developed storefront and management features for creating and operating e-commerce stores.",
+        "Built responsive React interfaces with reusable HTML and CSS components.",
+        "Implemented product and store workflows using Redux Toolkit for state management.",
+        "Integrated SQL and Elasticsearch services to support structured data and search experiences.",
+      ],
       link: "https://example.com",
       //github: "https://github.com/username/ecommerce",
     },
     {
       name: "HRM Management System",
+      domain: "Human Resources Management",
       description:
         "HRM Management System is a platform that allows you to create and manage your own HRM system.",
       technologies: [
@@ -251,11 +307,18 @@ export const portfolioData: PortfolioData = {
         "ExpressJS",
         "Material UI",
       ],
+      keyResponsibilities: [
+        "Developed modules for managing human resources workflows and employee data.",
+        "Built responsive interfaces using React and Material UI.",
+        "Implemented backend services with ExpressJS and MongoDB.",
+        "Integrated SQL-based data workflows and maintained reusable application components.",
+      ],
       //link: "https://example.com",
       //github: "https://github.com/username/hrm-management-system",
     },
     {
       name: "Optimize",
+      domain: "Hospital and Surgery Management",
       description:
         "Hospital and surgery management system with responsive UI and dynamic features like to manage patients, doctors, appointments, and more.",
       technologies: [
@@ -269,11 +332,18 @@ export const portfolioData: PortfolioData = {
         "HTML5",
         "CSS3",
       ],
+      keyResponsibilities: [
+        "Developed modules for managing patients, doctors, appointments, and surgery workflows.",
+        "Built responsive React interfaces with reusable HTML and CSS components.",
+        "Integrated MySQL and IndexedDB data flows for application operations and local persistence.",
+        "Implemented state management using Redux and backend services with Node.js and ExpressJS.",
+      ],
       //link: "https://example.com",
       //github: "https://github.com/username/hrm-management-system",
     },
     {
       name: "Plates",
+      domain: "Merchant and Grocery Management",
       description:
         "Merchant and grocery management system with responsive UI and dynamic features like to manage merchants, products, orders, and more.",
       technologies: [
@@ -285,19 +355,33 @@ export const portfolioData: PortfolioData = {
         "HTML5",
         "CSS3",
       ],
+      keyResponsibilities: [
+        "Developed management workflows for merchants, products, grocery orders, and related operations.",
+        "Built responsive React interfaces using reusable HTML and CSS components.",
+        "Implemented backend APIs with Node.js and ExpressJS.",
+        "Integrated MySQL data flows to support merchant, inventory, and order management.",
+      ],
       //link: "https://example.com",
       //github: "https://github.com/username/hrm-management-system",
     },
     {
       name: "Namable",
+      domain: "Domain Marketplace",
       description:
         "Domain buying and selling platform with responsive UI and dynamic features like to buy and sell domains.",
       technologies: ["React", "JavaScript", "BootStrap 4", "HTML5", "CSS"],
+      keyResponsibilities: [
+        "Developed responsive interfaces for buying and selling domain names.",
+        "Implemented dynamic domain marketplace features using React and JavaScript.",
+        "Built reusable layouts and components with Bootstrap 4, HTML5, and CSS.",
+        "Improved the browsing and transaction experience across supported screen sizes.",
+      ],
       //link: "https://example.com",
       //github: "https://github.com/username/hrm-management-system",
     },
     {
       name: "CideKick",
+      domain: "Manpower and Event Management",
       description:
         "Admin panel for manpower and event management with responsive UI and dynamic features like to manage manpower, events, bookings, and more.",
       technologies: [
@@ -310,6 +394,12 @@ export const portfolioData: PortfolioData = {
         "NodeJs",
         "ExpressJS",
         "MySql",
+      ],
+      keyResponsibilities: [
+        "Developed admin workflows for managing manpower, events, bookings, and related operations.",
+        "Built responsive React interfaces using Bootstrap, HTML5, and CSS.",
+        "Implemented application state management with Redux.",
+        "Integrated Node.js, ExpressJS, and MySQL services for operational data management.",
       ],
       //link: "https://example.com",
       //github: "https://github.com/username/hrm-management-system",
